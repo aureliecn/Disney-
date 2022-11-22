@@ -1,0 +1,5 @@
+<div class="new-movies-list" >
+    <div class="movie-card" *ngFor="let movieOfArray of movies$ | async as movie">
+        <img [src]="movieOfArray.poster" [alt]="movieOfArray.title">
+    </div>
+</div>
