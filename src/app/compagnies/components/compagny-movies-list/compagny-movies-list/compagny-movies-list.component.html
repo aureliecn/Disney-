@@ -5,6 +5,6 @@
 
 <div class="movies">
     <div class="movie-card" *ngFor="let movieOfArray of movies$ | async">
-        <img [src]="movieOfArray.poster" [alt]="movieOfArray.title">
+        <img [src]="movieOfArray.poster" [alt]="movieOfArray.title" (click)="onClick(movieOfArray.id)">
     </div>
 </div>

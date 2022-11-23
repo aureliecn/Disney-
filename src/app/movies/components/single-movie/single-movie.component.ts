@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog, MatDialogRef } from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Movie } from 'src/app/core/models/movie.model';
@@ -33,7 +33,6 @@ export class SingleMovieComponent implements OnInit {
 
   openModal(movieId: number){
     let dialogRef = this.modal.open(ModalSingleMovieComponent, {
-      width: '70%'
     });
     dialogRef.componentInstance.movieId = movieId
   }

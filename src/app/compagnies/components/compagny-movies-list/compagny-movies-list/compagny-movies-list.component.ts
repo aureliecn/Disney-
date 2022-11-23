@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Movie } from 'src/app/core/models/movie.model';
 import { CompagniesService } from 'src/app/core/services/compagnies.service';
@@ -16,7 +16,8 @@ export class CompagnyMoviesListComponent implements OnInit {
 
   constructor(
     private compagniesSrv: CompagniesService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -29,6 +30,11 @@ export class CompagnyMoviesListComponent implements OnInit {
     }
 
     console.log(this.urlImg);
+  }
+
+  onClick(movieId: number): void{
+    console.log(movieId);
+    this.router.navigateByUrl(`/movie/${movieId}`)
   }
 
 }
