@@ -1,8 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
-*{
-    margin: 0;
+
+body {
+    background-color: rgb(69, 70, 80);
+    font-family: 'Roboto', sans-serif;
 }
 
-body{
-    background-color: rgb(69, 70, 80);
+h2, p {
+    color: white;
+}
+
+
+
+img {
+    box-shadow: 5px 5px 30px black;
+    margin: 0.5rem 0rem;
 }

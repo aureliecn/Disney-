@@ -1,5 +1,7 @@
-<div class="new-movies-list" >
-    <div class="movie-card" *ngFor="let movieOfArray of movies$ | async as movie">
-        <img [src]="movieOfArray.poster" [alt]="movieOfArray.title">
-    </div>
+<div class="new-movies-list">
+    <ng-container *ngFor="let movieOfArray of movies$ | async as movie ; let index = index">
+        <div class="movie-card" *ngIf="index < 6">
+            <img  [src]="movieOfArray.poster" [alt]="movieOfArray.title" (click)="onClick(movieOfArray.id)">
+        </div>
+    </ng-container>
 </div>

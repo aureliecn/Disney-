@@ -1,1 +1,3 @@
-<p>banner works!</p>
+<div class="banner-wrapper" *ngIf="movie$ | async as movie">
+    <img [src]="movie.cover" [alt]="movie.title">
+</div>

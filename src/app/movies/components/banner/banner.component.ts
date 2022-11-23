@@ -10,14 +10,14 @@ import { MoviesService } from 'src/app/core/services/movies.service';
 })
 export class BannerComponent implements OnInit {
 
-  movie$!: Observable<Movie[]>;
+  movie$!: Observable<Movie>;
 
   constructor(
     private moviesSrv: MoviesService
   ) { }
 
   ngOnInit(): void {
-    this.movie$ = this.moviesSrv.getAllMoviesSuggest();
+    this.movie$ = this.moviesSrv.getBanner();
   }
 
 }

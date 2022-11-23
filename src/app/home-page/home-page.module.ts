@@ -4,6 +4,7 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { CompagniesModule } from '../compagnies/compagnies.module';
 import { NewMoviesListComponent } from '../movies/components/new-movies-list/new-movies-list/new-movies-list.component';
 import { MoviesModule } from '../movies/movies.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -14,7 +15,7 @@ import { MoviesModule } from '../movies/movies.module';
   imports: [
     CommonModule,
     CompagniesModule,
-    MoviesModule
+    MoviesModule, 
   ],
   exports: [
     HomePageComponent

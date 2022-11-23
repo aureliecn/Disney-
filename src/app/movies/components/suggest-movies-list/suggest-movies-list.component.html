@@ -1,5 +1,5 @@
 <div class="suggest-movies-list" >
-    <div class="movie-card" *ngFor="let movieOfArray of movies$ | async as movie">
-        <img [src]="movieOfArray.cover" [alt]="movieOfArray.title">
+    <div class="movie-card" *ngFor="let movieOfArray of movies$  | async as movie ; let index = index">
+        <img *ngIf="index < 3" [src]="movieOfArray.cover" [alt]="movieOfArray.title" (click)="onClick(movieOfArray.id)">
     </div>
 </div>

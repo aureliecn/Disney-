@@ -1,0 +1,25 @@
+.title-wrapper{
+    display: flex;
+    justify-content: center;
+
+    img{
+        width: 10%;
+        box-shadow: none;
+    }
+    p{
+        text-transform: uppercase;
+    }
+}
+
+.movies{
+    display: flex;
+    flex-wrap: wrap;
+    .movie-card{
+        width: 15%;
+        margin: 0rem 0.5rem;
+
+        img{
+            width: 100%;
+        }
+    }
+}

@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { NewMoviesListComponent } from './components/new-movies-list/new-movies-list/new-movies-list.component';
 import { SuggestMoviesListComponent } from './components/suggest-movies-list/suggest-movies-list.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { SingleMovieComponent } from './components/single-movie/single-movie.component';
+import { AngularMaterialModule } from '../material.module';
+import { ModalSingleMovieComponent } from './components/modal-single-movie/modal-single-movie.component';
 
 
 
@@ -10,10 +13,13 @@ import { BannerComponent } from './components/banner/banner.component';
   declarations: [
     NewMoviesListComponent,
     SuggestMoviesListComponent,
-    BannerComponent
+    BannerComponent,
+    SingleMovieComponent,
+    ModalSingleMovieComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AngularMaterialModule
   ],
   exports: [
     NewMoviesListComponent,

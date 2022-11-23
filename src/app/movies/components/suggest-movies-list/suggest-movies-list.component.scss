@@ -1,0 +1,12 @@
+.suggest-movies-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .movie-card{
+        width: 31%;
+        img{
+            width: 100%;
+        }
+    }
+}

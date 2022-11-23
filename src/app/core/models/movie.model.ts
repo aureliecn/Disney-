@@ -3,9 +3,12 @@ export class Movie {
         public id: number,
         public title: string,
         public description: string,
-        public releaseDate: Date,
+        public releaseDate: string,
         public poster: string,
         public cover: string,
-        public highlighted: boolean
+        public highlighted: boolean,
+        public duration: number,
+        public video: string,
+        public company: string
     ){}
 }
