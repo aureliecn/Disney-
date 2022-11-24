@@ -1,9 +1,9 @@
 <div class="single-movie-wrapper" *ngIf="movie$ | async as movie">
-    <div class="trailer-wrapper" (click)="openModal(movie.id)"> 
+    <div class="trailer-wrapper" (click)="openModal(movie.id)">
         <img [src]="movie.poster" [alt]="movie.title">
         <i class="fa-regular fa-circle-play"></i>
     </div>
-    <div class="info-wrapper">
+    <div class="description-wrapper">
         <h2>{{movie.title}}</h2>
         <button mat-raised-button>{{movie.company}}</button>
         <p>{{movie.description}}</p>

@@ -1,12 +1,10 @@
-.new-movies-list{
+.new-movies{
+    padding: 2rem 0;
+    .new-movies-list{
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
-
         .movie-card{
             width: 15%;
-            img{
-                width: 100%;
-            }
         }
+    }
 }

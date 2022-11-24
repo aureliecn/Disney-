@@ -2,26 +2,24 @@
 @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
 @import '~@angular/material/prebuilt-themes/indigo-pink.css'; 
 
-body {
-    background-color: rgb(69, 70, 80);
-    font-family: 'Roboto', sans-serif;
-
-    *{
-        margin: 0rem 1rem
-    }
+*{
+    box-sizing: border-box;
+    margin: 0;
 }
-
-h2, p {
+html, body { 
+    min-height: 100vh;
     color: white;
+    background-color: rgb(69, 70, 80);
+
+}
+body { 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    padding: 0 2rem;
 }
 
-
-
-img {
+img{
+    width: 100%;
+    cursor: pointer;
     box-shadow: 5px 5px 30px black;
-    margin: 0.5rem 0rem;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
 

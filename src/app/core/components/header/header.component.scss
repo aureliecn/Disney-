@@ -4,9 +4,11 @@ nav{
     justify-content: center;
     .nav-wrapper{
         width: 7%;
+        cursor: pointer;
         img{
             width: 100%;
             box-shadow: none;
         }
     }
+    padding-bottom: 0.5rem;
 }

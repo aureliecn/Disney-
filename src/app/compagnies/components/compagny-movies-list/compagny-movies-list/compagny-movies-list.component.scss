@@ -1,25 +1,40 @@
 .title-wrapper{
+    padding: 1rem 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 
-    img{
+    .img-wrapper{
         width: 10%;
-        box-shadow: none;
+        img{
+            box-shadow: none;
+            cursor: unset;
+        }
     }
+
     p{
         text-transform: uppercase;
+        font-size: large;
+        width: 10%;
+        text-align: center;
     }
 }
 
 .movies{
     display: flex;
     flex-wrap: wrap;
+    padding: 1rem 0;
+
     .movie-card{
         width: 15%;
-        margin: 0rem 0.5rem;
+        margin-left: 0.9rem;
+        margin-right: 0.9rem;
+        margin-bottom: 0.5rem;
+
 
         img{
-            width: 100%;
+            border: 1px solid #DDDDDE;
+
         }
     }
 }

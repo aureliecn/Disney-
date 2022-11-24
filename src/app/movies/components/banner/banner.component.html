@@ -1,3 +1,2 @@
-<div class="banner-wrapper" *ngIf="movie$ | async as movie">
-    <img [src]="movie.cover" [alt]="movie.title">
+<div class="banner-wrapper" *ngIf="movie$ | async as movie" [ngStyle]="{'background-image': 'url('+movie.cover+')'}">
 </div>

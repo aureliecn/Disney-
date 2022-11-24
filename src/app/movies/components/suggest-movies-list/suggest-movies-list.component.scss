@@ -1,12 +1,10 @@
-.suggest-movies-list{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    .movie-card{
-        width: 31%;
-        img{
-            width: 100%;
+.suggest-wrapper{
+    padding: 2rem 0;
+    .suggest-movies-list{
+        display: flex;
+        justify-content: space-between;
+        .movie-card{
+            width: 32%;
         }
     }
 }

@@ -18,6 +18,17 @@ export class BannerComponent implements OnInit {
 
   ngOnInit(): void {
     this.movie$ = this.moviesSrv.getBanner();
+
+    // let divBanner = document.getElementsByClassName('banner-wrapper')[0]
+    // let divBannerBis = document.getElementById('banner-wrapper')
+    // divBannerBis!.style.backgroundImage = "url('')"
+    // divBanner.setAttribute("background-color", "red")
+    // class
+    // document.querySelector('.banner-wrapper')
+    // id
+    // document.querySelector('#banner-wrapper')
+    // id
+    // document.getElementById('banner-wrapper')
   }
 
 }

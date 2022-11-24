@@ -1,6 +1,47 @@
-.info-wrapper{
-    button{
-        background-color: #00B9DC;
-        color: white;
+// .info-wrapper{
+//     button{
+//         background-color: #00B9DC;
+//         color: white;
+//     }
+// }
+
+.single-movie-wrapper{
+    padding: 2rem 0;
+    .trailer-wrapper{
+        width: 30%;
+        position: relative;
+        margin-right: 1.5rem;
+
+        img{
+            box-shadow: none;
+            opacity: 0.7;
+        }
+
+        i{
+            position: absolute;
+            top: 50%;
+            left: 42%;
+            font-size: 4rem;
+            color: #00B9DC;
+            background-color: white;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+
+    display: flex;
+
+    .description-wrapper{
+        width: 60%;
+        h2{
+            font-size: xx-large;
+        }
+
+        button{
+            background-color: #00B9DC;
+            color: white;
+            margin: 1rem 0;
+            cursor: unset;
+        }
     }
 }
