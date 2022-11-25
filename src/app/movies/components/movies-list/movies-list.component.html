@@ -1,0 +1,11 @@
+<div class="movies">
+    <h2>{{this.type === "new" ? "Nouveautés" : "Suggestions"}}</h2>
+    <div class="movies-list">
+        <ng-container *ngFor="let movieOfArray of movies$ | async as movie ; let index = index">
+            <div class="movie-card" *ngIf="this.type === 'new' ? index < 6 : index < 3" [ngClass]="this.type === 'new' ? 'new-card' : 'suggest-card'">
+                <img  [src]="this.type === 'new' ? movieOfArray.poster : movieOfArray.cover" [alt]="movieOfArray.title" (click)="onClick(movieOfArray.id)">
+            </div>
+        </ng-container>
+    </div>
+    
+</div>

@@ -1,8 +1,12 @@
 <div class="banner-wrapper" *ngIf="movie$ | async as movie" [ngStyle]="{'background-image': 'url('+movie.cover+')'}">
 </div>
 
+
 <app-compagnies-list></app-compagnies-list>
 
-<app-new-movies-list></app-new-movies-list>
+<app-movies-list [type]="'new'"></app-movies-list>
+<app-movies-list [type]="'suggest'"></app-movies-list>
 
-<app-suggest-movies-list></app-suggest-movies-list>
+<!-- <app-new-movies-list></app-new-movies-list>
+
+<app-suggest-movies-list></app-suggest-movies-list> -->
