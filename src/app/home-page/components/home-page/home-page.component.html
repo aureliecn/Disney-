@@ -1,8 +1,8 @@
-<app-banner></app-banner>
-<!-- <img src="https://www.issgovernance.com/file/2013/11/Website-Frontpage-Header-02.jpg" alt=""> -->
+<div class="banner-wrapper" *ngIf="movie$ | async as movie" [ngStyle]="{'background-image': 'url('+movie.cover+')'}">
+</div>
 
 <app-compagnies-list></app-compagnies-list>
 
-<app-new-movies-list ></app-new-movies-list>
+<app-new-movies-list></app-new-movies-list>
 
 <app-suggest-movies-list></app-suggest-movies-list>

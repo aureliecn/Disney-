@@ -14,7 +14,7 @@ export class MoviesService {
         ){}
 
     getBanner(): Observable<Movie>{
-        return this.getAllMoviesSuggest().pipe(
+        return this.getAllNewMovies().pipe(
             map(e =>{
                 return e.sort((a, b) => new Date(b.releaseDate).getTime() - new Date(a.releaseDate).getTime())[0]
             })

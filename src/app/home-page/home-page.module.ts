@@ -5,20 +5,21 @@ import { CompagniesModule } from '../compagnies/compagnies.module';
 import { NewMoviesListComponent } from '../movies/components/new-movies-list/new-movies-list/new-movies-list.component';
 import { MoviesModule } from '../movies/movies.module';
 import { RouterModule } from '@angular/router';
+import { SuggestMoviesListComponent } from "../movies/components/suggest-movies-list/suggest-movies-list.component";
 
 
 
 @NgModule({
-  declarations: [
-    HomePageComponent
-  ],
-  imports: [
-    CommonModule,
-    CompagniesModule,
-    MoviesModule, 
-  ],
-  exports: [
-    HomePageComponent
-  ]
+    declarations: [
+        HomePageComponent
+    ],
+    exports: [
+        HomePageComponent
+    ],
+    imports: [
+        CommonModule,
+        CompagniesModule,
+        MoviesModule,
+    ]
 })
 export class HomePageModule { }

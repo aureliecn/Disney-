@@ -1,6 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { CompagniesModule } from 'src/app/compagnies/compagnies.module';
-import { CompagniesService } from 'src/app/core/services/compagnies.service';
+import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Movie } from 'src/app/core/models/movie.model';
+import { MoviesService } from 'src/app/core/services/movies.service';
 
 @Component({
   selector: 'app-home-page',
@@ -9,9 +10,16 @@ import { CompagniesService } from 'src/app/core/services/compagnies.service';
 })
 export class HomePageComponent implements OnInit {
   // @Input() compagny!: CompagniesModule;
-  constructor() { }
+
+  movie$!: Observable<Movie>;
+  
+  constructor(
+    private moviesSrv: MoviesService
+  ) { }
 
   ngOnInit(): void {
+
+    this.movie$ = this.moviesSrv.getBanner();
   }
 
 }
