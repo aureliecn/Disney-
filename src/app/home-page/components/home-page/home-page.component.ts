@@ -12,7 +12,7 @@ export class HomePageComponent implements OnInit {
   // @Input() compagny!: CompagniesModule;
 
   movie$!: Observable<Movie>;
-  
+
   constructor(
     private moviesSrv: MoviesService
   ) { }

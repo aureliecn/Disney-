@@ -1,9 +1,12 @@
-.suggest-wrapper{
+.movies{
     padding: 2rem 0;
-    .suggest-movies-list{
+    .movies-list{
         display: flex;
         justify-content: space-between;
-        .movie-card{
+        .new-card{
+            width: 15%;
+        }
+        .suggest-card{
             width: 32%;
         }
     }
